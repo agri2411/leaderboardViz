@@ -1,0 +1,279 @@
+.iExlDnld {
+    float: right;
+    right: 10px;
+    position: relative;
+}
+#showLbl {
+    font-size: 13px;
+}
+#showDates {
+    font-weight: bold;
+    font-size: 14px;
+}
+.widgetHeader{  
+    width: 99%;
+    height:25px;
+    margin: 10px 0 0 10px;
+}
+.widgetHeaderLbl{
+    font-size: 18px;
+    font-weight: 600;
+    color: #00237b;
+    display:inline-block;
+    float:left;
+}
+#selDates{
+    float: right;
+    right: 20px;
+    position: relative;
+    color: #878787;
+}
+.filterWrapper{
+    width:100%;
+    float:right;
+}
+.quickFilter{
+    width: 80%;
+    height: 35px;
+    padding: 10px 0 0 20px;
+    position: relative;
+    float: left;
+}
+.selectedVals{
+    width: 14%;
+    height: 35px;
+    padding: 10px 0 0 20px;
+    position: relative;
+    float: right;
+    right: 6%;
+}
+
+.pentaho-toggle-button-down button {
+    background: transparent;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    color: #2e2e2e;
+    font-weight:bold;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 3px solid #F5BD19;
+}
+.pentaho-toggle-button-up button {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    color: #B9BCC6;
+}
+.filterLbl {
+    float: right;
+    margin-right: 20px;
+}
+#dateFilter {
+    float: right;
+}
+.pentaho-toggle-button {
+    float: left;
+    margin-left: 5px;
+}
+
+.content-Wrapper{
+        position: relative;
+        height: 749px;
+        background: #F5F6FB;
+        width: 100%;
+        float:left;
+    }
+    .contentContainer{
+        background: #ffffff;
+        border-radius: 10px;
+        width: calc(100% - 140px);
+        height:670px;
+        margin: 10px 0 0 20px;
+        float: left;
+        box-shadow: 0 5px 5px -4px #908f8f;
+        -webkit-box-shadow: 0 5px 5px -4px #908f8f;
+        -moz-box-shadow: 0 5px 5px -4px #908f8f;
+    }
+    svg{
+        position:relative;
+        left:30px;
+    }
+    text{
+      font-size: 16px;
+      font-family: Open Sans, sans-serif;
+    }
+    text.title{
+      font-size: 24px;
+      font-weight: 500;
+    }
+      text.subTitle{
+        font-weight: 500;
+        fill: #777777;
+      }
+      text.caption{
+        font-weight: 400;
+        font-size: 14px;
+        fill: #777777;
+      }
+      text.label{
+        font-weight: 600;
+      }
+    
+      text.valueLabel{
+       font-weight: 300;
+      }
+    
+      text.yearText{
+        font-size: 64px;
+        font-weight: 700;
+        opacity: 0.25;
+      }
+      .tick text {
+        fill: #777777;
+      }
+      .xAxis .tick:nth-child(2) text {
+        text-anchor: start;
+      }
+      .tick line {
+        shape-rendering: CrispEdges;
+        stroke: #dddddd;
+      }
+      .tick line.origin{
+        stroke: #aaaaaa;
+      }
+      path.domain{
+        display: none;
+      } 
+      
+      /**************** Tooltip text *****************************/
+ .tooltipEnable {
+     position: relative;
+     display: inline-block;
+}
+ .tooltipEnable .rightpos {
+     top: 5px;
+     left: 105%;
+}
+ .tooltipEnable .leftpos {
+     top: 4px;
+     right: 125%;
+}
+ .tooltipEnable .toppos {
+     bottom: 105%;
+     left: 50%;
+     margin-left: -45px;
+}
+ .tooltipEnable .bottompos {
+     top: 110%;
+     left: 50%;
+     margin-left: -60px;
+    /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+.pdfExport.tooltipEnable .bottompos {
+    top: 50px;
+    left: -50px;
+    margin-left: -60px;
+}
+ .pdfExport {
+     float: right!important;
+     margin-right: 15px;
+}
+
+.filterIcon.tooltipEnable .bottompos {
+     top: 110%;
+     left: 86%;
+     margin-left: -60px;
+}
+ .tooltipEnable .tooltiptext {
+     visibility: hidden;
+     min-width: 50px;
+     max-width: 270px;
+     height:24px;
+     -webkit-box-shadow: 2px 3px 10px 0px rgba(81,88,97,1);
+     -moz-box-shadow: 2px 3px 10px 0px rgba(81,88,97,1);
+     box-shadow: 2px 3px 10px 0px rgba(81,88,97,1);
+     background-color: #121212;
+     color: #ffc028;
+     text-align: center;
+     padding: 8px;
+     font-size:11px;
+     white-space: nowrap;
+     line-height: 10px;
+     word-break : normal;
+     opacity:0;
+     transition: opacity 0.3s;
+    /* Position the tooltip text - see examples below! */
+     position: absolute;
+     z-index: 1;
+}
+ .tooltipEnable:hover .tooltiptext {
+     display: block;
+     opacity: 1;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+ .tooltipEnable:hover .tooltiptext {
+     visibility: visible;
+}
+/* Dynamic Arrow generation*/
+/* To the right of the tooltip */
+ .tooltipEnable .rightArrow::after {
+     content: " ";
+     position: absolute;
+     top: 50%;
+     left: 100%;
+     margin-top: -5px;
+     border-width: 5px;
+     border-style: solid;
+     border-color: transparent transparent transparent #121212;
+}
+/* To the left of the tooltip */
+ .tooltipEnable .leftArrow::after {
+     content: " ";
+     position: absolute;
+     top: 50%;
+     right: 100%;
+     margin-top: -5px;
+     border-width: 5px;
+     border-style: solid;
+     border-color: transparent #121212 transparent transparent;
+}
+/* To the top of the tooltip */
+ .tooltipEnable .topArrow::after {
+     content: " ";
+     position: absolute;
+     bottom: 100%;
+     left: 50%;
+     margin-left: -5px;
+     border-width: 5px;
+     border-style: solid;
+     border-color: transparent transparent #121212 transparent;
+}
+/* To the bottom of the tooltip */
+ .tooltipEnable .bottomArrow::after {
+     content: " ";
+     position: absolute;
+     top: 100%;
+     left: 50%;
+     margin-left: -5px;
+     border-width: 5px;
+     border-style: solid;
+     border-color: #121212 transparent transparent transparent;
+}
+.pdfExport.tooltipEnable .topArrow::after{
+    left: 85%;
+} 
+
+#dashHelp.tooltipEnable .topArrow::after{
+    left: 81%;
+    border-color: transparent transparent #f9f9f9 transparent;
+} 
+/********************* Tooltip text ends********************/
+
+@media screen and (min-width: 1900px) {
+  #leaderBoardContainer {
+    width: 1640px;
+  }
+}
+
+ 
